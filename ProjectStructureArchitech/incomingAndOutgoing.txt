@@ -1,0 +1,50 @@
+Database Name : E_M_System
+----------------For Teacher--------------
+/teacher-board/{id}
+
+/teachers/all-teachers
+
+/courses
+/courses/{teacherId}
+/courses/my-students/{course-code}
+
+@GetMapping
+/exams/questions/{question-paper}
+
+@PostMapping
+/exams/questions/{question-paper-id}
+
+/exam/question/view/questionId
+/exams/all-exams/{teacher-id}
+/exams/all-result/{teacher-id}
+/exams/review/{courseId}/{examId}
+
+/terms-and-condition
+
+/faq
+
+--------------For Admin----------------
+/admin-board
+
+/teachers/add-teachers
+/teachers/approve-teachers/list
+/teachers/approve-teachers/approve/{teacher-id}
+/teachers/approve-teachers/delete/{teacher-id}
+
+/courses/add-courses
+
+/students/add-students
+/students/all-students
+/students/approve-students
+
+
+-----------For Student-----------------
+/student-board/{id}
+
+/departmental-course/current-courses/{studentId}
+/departmental-course/{deptId}
+/departmental-course/completed/{studentId}
+
+/exams/upcoming/{studentId}
+/exams/previous/{studentId}
+/exams/review//{studentId}/{examId}
